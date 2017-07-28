@@ -24,7 +24,11 @@ export class SignupComponent implements OnInit {
       alert(response.msg);
       this._router.navigate(['home']);
     },
-      error => this.errorMessage = <any>error);
+      error => {
+        this.errorMessage = <any>error;
+         alert('The email has already been taken.');
+         this._router.navigate(['signup']);
+      });
   }
 
 }
