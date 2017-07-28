@@ -13,7 +13,7 @@ export class AuthService{
         {headers: new Headers({'X-Requested-With': 'XMLHttpRequest'})})
         .map((response: Response) => <any[]>response.json())
             .do(data => console.log('All: ' + JSON.stringify(data)))
-            .catch(this.handleError);;
+            .catch(this.handleError);
     }
 
     private handleError(error: Response) {

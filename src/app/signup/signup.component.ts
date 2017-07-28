@@ -16,18 +16,15 @@ export class SignupComponent implements OnInit {
               private _router: Router,) { }
 
   ngOnInit() {
-     
   }
 
   onSignup(form: NgForm){
     this._authService.signup(form.value.username,form.value.email,form.value.password )
     .subscribe(response => {
       alert(response.msg);
-
       this._router.navigate(['home']);
     },
       error => this.errorMessage = <any>error);
-
   }
 
 }

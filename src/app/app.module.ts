@@ -10,6 +10,7 @@ import { routing } from './app.routing';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AuthService } from "./services/auth.service";
 import { HomeComponent } from './home/home.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HomeComponent } from './home/home.component';
     SigninComponent,
     SignupComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    MainComponent
     
   ],
   imports: [
