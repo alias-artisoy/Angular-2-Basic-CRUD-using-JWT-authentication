@@ -11,6 +11,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AuthService } from "./services/auth.service";
 import { HomeComponent } from './home/home.component';
 import { MainComponent } from './main/main.component';
+import { SpeechDetailsComponent } from './speech-details/speech-details.component';
+import { SpeechesComponent } from './speeches/speeches.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { MainComponent } from './main/main.component';
     SignupComponent,
     NavbarComponent,
     HomeComponent,
-    MainComponent
+    MainComponent,
+    SpeechDetailsComponent,
+    SpeechesComponent
     
   ],
   imports: [

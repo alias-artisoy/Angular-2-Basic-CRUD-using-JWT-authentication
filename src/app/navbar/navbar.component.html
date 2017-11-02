@@ -1,20 +1,33 @@
+
 <div class="container">
-  <div class="header">
-    <ul class="nav nav-pills pull-right">
-      <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-      <li><a routerLink="/signup" routerLinkActive="active">Signup</a></li>
-      <li><a routerLink="/signin" routerLinkActive="active">Signin</a></li>
-      <li><a routerLink="" routerLinkActive="active">Log out</a></li>
-    </ul>
-    <h3 class="text-muted">Meet Ups</h3>
+  <!-- Static navbar -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a routerLink="/speeches" routerLinkActive="active">View my Speeches</a></li>
+          <li><a routerLink="" routerLinkActive="active">Submit a new Speech</a></li>
+          <li><a routerLink="" routerLinkActive="active">Search all Speeches</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
   </div>
 
-<div class="container">
-      <router-outlet></router-outlet>
-</div>
-
-  <div class="footer">
+  <div class="row row-offcanvas row-offcanvas-left">
+    <router-outlet></router-outlet>
+  </div><!--/row-->
+  
+  <hr>
+  <footer>
     <p>&copy; Company 2017</p>
-  </div>
+  </footer>
 
-</div>
+</div><!--/.container-->
